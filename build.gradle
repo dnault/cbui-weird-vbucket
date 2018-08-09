@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    jcenter()
+}
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+
+mainClassName = 'com.couchbase.Driver'
+
+dependencies {
+    compile 'net.sf.jopt-simple:jopt-simple:5.0.4'
+    compile 'com.couchbase.client:java-client:2.6.1'
+}
+
